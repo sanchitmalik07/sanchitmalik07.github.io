@@ -16,7 +16,7 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
+  color: #ee6e73;
 }
 
 .parallax-container {
@@ -54,4 +54,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+nav .button-collapse i{
+    line-height: 150px;
 }
