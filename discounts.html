@@ -43,11 +43,46 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <span>Share And Earn Extra Discount</span>
-    <ul class="sociallinks">
-        <li><a id="facebookID" href="javascript:;" onclick="opensocialwindow('http://sunmartelectricals.com/discounts.html', 1);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
-        <li><a id="twitterID" href="javascript:;" onclick="opensocialwindow('https://twitter.com/home?status=http://sunmartelectricals.com/discounts.html', 3);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a></li>
-    </ul>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/thumbnail/mcb.png">
+                        <div class="caption left-align">
+                            <h3 style="color:red">Havells Single Pole MCB C Curve</h3>
+                            <h5 class="red-text text-lighten-1">Flat 32.5 % Off</h5>
+                            <a class="waves-effect waves-light" id="facebookIDmcb" href="javascript:;" onclick="opensocialwindow('http://sunmartelectricals.com/discounts.html', 1);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
+                            <a class="waves-effect waves-light" id="twitterIDmcb" href="javascript:;" onclick="opensocialwindow('https://twitter.com/home?status=http://sunmartelectricals.com/discounts.html', 3);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnail/havells_mccb.png">
+                        <div class="caption left-align">
+                            <h3 style="color:red">Havells MCCB</h3>
+                            <h5 class="red-text text-lighten-1">Flat 40 % Off</h5>
+                            <a class="waves-effect waves-light" id="facebookIDmccb" href="javascript:;" onclick="opensocialwindow('http://sunmartelectricals.com/discounts.html', 1);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
+                            <a class="waves-effect waves-light" id="twitterIDmccb" href="javascript:;" onclick="opensocialwindow('https://twitter.com/home?status=http://sunmartelectricals.com/discounts.html', 3);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnail/havells_rccb.png">
+                        <div class="caption left-align">
+                            <h3 style="color:red">Havells RCCB</h3>
+                            <h5 class="red-text text-lighten-1">Flat 32.5 % Off</h5>
+                            <a class="waves-effect waves-light" id="facebookIDrccb" href="javascript:;" onclick="opensocialwindow('http://sunmartelectricals.com/discounts.html', 1);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
+                            <a class="waves-effect waves-light" id="twitterIDrccb" href="javascript:;" onclick="opensocialwindow('https://twitter.com/home?status=http://sunmartelectricals.com/discounts.html', 3);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnail/havells_cable_and_wire_mirror.png">
+                        <div class="caption left-align">
+                            <h3 style="color:red">Havells Cables And Wires</h3>
+                            <h5 class="red-text text-lighten-1">Flat 40 % Off</h5>
+                            <a class="waves-effect waves-light" id="facebookIDwire" href="javascript:;" onclick="opensocialwindow('http://sunmartelectricals.com/discounts.html', 1);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
+                            <a class="waves-effect waves-light" id="twitterIDwire" href="javascript:;" onclick="opensocialwindow('https://twitter.com/home?status=http://sunmartelectricals.com/discounts.html', 3);"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
     <footer class="page-footer red">
         <div class="container">
             <div class="row">
@@ -80,8 +115,24 @@
         $('.side-nav li').click(function () {
             $(this).css('background-color', 'rgba(51,51,51,0.08)');
         });
+        $(document).ready(function () {
+            $('.slider').slider({ full_width: true, Indicators: false});
+        });
     </script>
     <style type="text/css">
+        /*.sociallinks li {
+            display: inline-block;
+            margin: 0 3px 0 0;
+        }*/
+
+        .slider .slides a {
+            border-color: #d43f3a;
+        }
+
+        .slider .slides a {
+            /*color: #c9302c;*/
+            color: #F44336 !important;
+        }
         .sociallinks li {
             display: inline-block;
             margin: 0 3px 0 0;
@@ -99,13 +150,22 @@
             .sociallinks a:hover {
                 color: #ac2925;
             }
-
+            .slider .slides a:hover {
+                color: #ac2925;
+            }
+        
         .button-collapse {
             color: red;
         }
 
         body {
             font-family: 'Roboto', sans-serif;
+        }
+        .slider .slides li img{
+            background-color: white;
+        }
+        .slider .indicators .indicator-item.active {
+            background-color: #F44336 !important;
         }
     </style>
 </body>
